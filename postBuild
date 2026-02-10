@@ -1,0 +1,6 @@
+#!/bin/bash
+# PostBuild script for Binder - installs the local package
+pip install -e .
+
+# Enable ipyleaflet extension for Voila
+jupyter nbextension enable --py --sys-prefix ipyleaflet

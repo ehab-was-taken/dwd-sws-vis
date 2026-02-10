@@ -1,0 +1,8 @@
+# Binder requirements for DWD SWS Dashboard
+requests
+pandas
+openpyxl
+ipywidgets
+ipyleaflet
+matplotlib
+voila

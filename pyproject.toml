@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dwd-sws"
+version = "0.1.0"
+description = "A library and dashboard for DWD Road Weather Stations"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests",
+    "pandas",
+    "openpyxl",
+    "ipywidgets",
+    "ipyleaflet",
+    "matplotlib",
+    "jupyterlab"
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
